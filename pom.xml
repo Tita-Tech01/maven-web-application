@@ -60,7 +60,7 @@
 		</dependency>
 
 	
-<!--	 compile dependencies 
+<!--	 compile dependencies -->
 
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -83,9 +83,9 @@
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
--->
+
 		
-		<!-- provided dependencies 
+		<!-- provided dependencies -->
 
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -94,7 +94,7 @@
 			<scope>provided</scope>
 		</dependency>	
                    
-		-->
+		
 
 	</dependencies>
 
