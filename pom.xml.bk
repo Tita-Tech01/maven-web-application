@@ -16,14 +16,15 @@
 		<name>Landmark Technologies</name>
 		<url>http://landmarktechnologies.com/</url>
 	</organization>
+
 	<properties>
 		<jdk.version>1.8</jdk.version>
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http:172.31.13.243:9000/</sonar.host.url>
-		<sonar.login>admin</sonar.login>
-		<sonar.password>admin</sonar.password>
+		<sonar.host.url>http:172.31.71.9:9000/</sonar.host.url>
+		<sonar.login>9787d8595c5872771f9dc47058b5a384540a27f0</sonar.login>
+		<!-- <sonar.password>admin123</sonar.password>  -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
@@ -58,15 +59,13 @@
 			<scope>test</scope>
 		</dependency>
 
-	
-<!--	 compile dependencies 
+		<!-- compile dependencies -->
 
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-
 		<dependency>
     		<groupId>org.springframework</groupId>
     		<artifactId>spring-web</artifactId>
@@ -82,9 +81,8 @@
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
--->
 		
-		<!-- provided dependencies 
+		<!-- provided dependencies -->
 
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -92,12 +90,7 @@
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>	
-                   
-		-->
-
 	</dependencies>
-
-<!--
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
@@ -112,10 +105,9 @@
 	    </snapshotRepository>
 	    
 	</distributionManagement>
--->
 	
 	<build>
-		<finalName>tita</finalName>
+		<finalName>tesla</finalName>
 		
 		<plugins>
 			<plugin>
@@ -123,8 +115,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.3</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
 				</configuration>
 			</plugin>
 
